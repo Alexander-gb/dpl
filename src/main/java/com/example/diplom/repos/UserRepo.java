@@ -1,4 +1,5 @@
 package com.example.diplom.repos;
+
 import com.example.diplom.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

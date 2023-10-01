@@ -1,12 +1,12 @@
 package com.example.diplom.repos;
 
-import com.example.diplom.domain.Message;
+import com.example.diplom.domain.Cargo;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MessageRepo extends CrudRepository<Message, Long> {
+public interface MessageRepo extends CrudRepository<Cargo, Integer> {
 
-    List<Message> findByTag(String tag);
+    List<Cargo> findByConsigneeContains(String consignee);
 
 }
